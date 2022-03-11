@@ -1,14 +1,14 @@
 
 /**
  * 蓝桥杯: 三羊献瑞
- * @author 19833
+ * @author 只爱吃土豆
  *
  */
 public class TestDemo4 {
 	public static void main(String[] args) {
 		//创建一个数组,用来表示  三 羊 献 瑞 祥 生 辉 气
 		int[] arr = new int[8];
-		//自定义函数,用来找出 符合 题目要求 的数
+		
 		dfs(arr,0);
 	}
 

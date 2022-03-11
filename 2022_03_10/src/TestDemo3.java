@@ -4,7 +4,7 @@ import java.util.Stack;
 public class TestDemo3 {
 	
 	/**
-	  *  求出一个数组全排列
+	  *  求出一个数组的全排列
 	 * @param args
 	 */
 	public static void main(String[] args) {
