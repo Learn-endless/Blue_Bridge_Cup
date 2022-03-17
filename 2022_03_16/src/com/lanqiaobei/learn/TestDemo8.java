@@ -12,7 +12,7 @@ public class TestDemo8 {
 		int count = 0;
 		int w = n;
 		boolean flg = false;
-		for(int i = 0; i < w/2 ;i++) {
+		for(int i = 0; i <= w/2 ;i++) {
 			for(int j = n-1; j >= i; j--) {
 				if(i == j) {
 					if(flg == true || w % 2 == 0) {
