@@ -1,6 +1,10 @@
 
 import java.util.*;
 public class TestDemo1 {
+	/**
+	 * BASIC-18	VIP试题 矩形面积交
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		double x1 = sc.nextDouble();
@@ -12,6 +16,9 @@ public class TestDemo1 {
 		double x4 = sc.nextDouble();
 		double y4 = sc.nextDouble();
 		
+		/**
+		 * 
+		 */
 		if(x1 > x2) {
 			double tmp = x1;
 			x1 = x2;
