@@ -1,4 +1,4 @@
-import java.util.PriorityQueue;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main2 {
@@ -11,21 +11,18 @@ public class Main2 {
 		for(int i = 0; i < n; i++) {
 			int m = sc.nextInt();   //表示 字符串的个数
 			s = new String[m];
-			PriorityQueue<Character> pr = new PriorityQueue<>();
 			for(int j = 0; j < m; j++) {
 				s[j] = sc.next();
-				for(int k = 0; k < s[j].length(); k++) {
-					char ch = s[j].charAt(k);
-					if(ch != ' ') {
-						pr.offer(ch);
-					}
-				}
 			}
-			StringBuilder str = new StringBuilder();
-			while(pr.size() != 0) {
-				str.append(pr.poll());
+			Arrays.sort(s,(o1,o2)->{
+				String o1o2 = o1+o2;
+				String o2o1 = o2+o1;
+				return o1o2.compareTo(o2o1);
+			});
+			for(int j = 0; j < s.length; j++) {
+				System.out.print(s[j]);
 			}
-			System.out.println(str.toString());
+			System.out.println();
 		}	
 	}
 }
