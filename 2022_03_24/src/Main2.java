@@ -1,6 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ * 试题 算法提高 最小字符串
+ * @author 19833
+ *
+ */
 public class Main2 {
 	public static String[] s;
 	public static void main(String[] args) {
