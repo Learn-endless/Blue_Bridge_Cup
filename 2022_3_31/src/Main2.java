@@ -10,12 +10,12 @@ public class Main2 {
 	private static String Sn(int n) {
 		StringBuilder s = new StringBuilder();
 		
-		if(n > 2) {
-			s.append("((");
-		}
-		if(n == 2) {
+		int nn = n;
+		while(nn > 1) {
 			s.append("(");
+			nn--;
 		}
+		
 		for(int i = 0; i < n; i++) {
 			String str = An(i+1);
 			s.append(str+"+");
