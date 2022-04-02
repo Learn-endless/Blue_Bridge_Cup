@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Main3 {
 	
 	private static int huiWenString(String s) {
@@ -43,7 +43,7 @@ public class Main3 {
 	}
 	
 	public static void main(String[] args) {
-		String s = "aab";
+		String s = "google";
 		int ret = huiWenString(s);
 		System.out.println(ret);
 	}
