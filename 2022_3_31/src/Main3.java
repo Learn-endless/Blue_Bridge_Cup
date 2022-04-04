@@ -1,6 +1,10 @@
 
 public class Main3 {
-	
+	/**
+	 * 将一个字符串分割成回文字符串的最小次数
+	 * @param s
+	 * @return
+	 */
 	private static int huiWenString(String s) {
 		int len = s.length();
 		if(len == 1 || isPal(s,0,len-1)) {
@@ -17,6 +21,7 @@ public class Main3 {
 		for(int i = 1; i <= len; i++) {
 			for(int j = 1; j < i; j++) {
 				
+				//这里是用来判断前 i 个字符整体是不是一个回文串
 				if(isPal(s,0,i-1)) {
 					array[i] = 0;
 					continue;
