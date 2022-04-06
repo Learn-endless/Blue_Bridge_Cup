@@ -8,7 +8,6 @@ public class Main2 {
         for(int i = 0 ; i <= 9 ; i ++){
             kp[i] = 2021;//Ã¿ÖÖ¿¨Æ¬2021ÕÅ
         }
-        kp[2] = 5;
         System.out.println(def(kp));
     }
 

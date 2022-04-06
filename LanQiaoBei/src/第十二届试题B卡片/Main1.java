@@ -19,7 +19,6 @@ public class Main1 {
 		for(int i = 0; i < number.length; i++) {
 			number[i] = 2021;
 		}
-		number[2] = 5;
 		for(int i = 1; i < 20210; i++) {
 			int tmp = i;
 			while(tmp != 0) {
