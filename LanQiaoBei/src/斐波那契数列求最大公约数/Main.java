@@ -4,13 +4,12 @@ import java.math.BigInteger;
 
 public class Main {
 	
-	private static long fibNumber(long n) {
-		int[] arr = new int[2025];
-		BigInteger a = new BigInteger(arr);
-		BigInteger b = 1;
-		long c = -1;
+	private static BigInteger fibNumber(long n) {
+		BigInteger a = new BigInteger("1",10);
+		BigInteger b = new BigInteger("1",10);
+		BigInteger c = new BigInteger("0",10);
 		for(int i = 3; i <= n; i++) {
-			c = a + b;
+			c = a.add(b);
 			a = b;
 			b = c;
 		}
@@ -18,8 +17,7 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		long n1 = fibNumber(2020);
-		long n2 = fibNumber(520);
-		System.out.println(n1+"   "+n2);
+		BigInteger ret = fibNumber(2020).gcd(fibNumber(520));
+		System.out.println(ret.toString());
 	}
 }
