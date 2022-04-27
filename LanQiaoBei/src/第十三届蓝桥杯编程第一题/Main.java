@@ -15,13 +15,8 @@ public class Main {
 		//定义一个map用来统计重复出现字符的个数
 		Map<Character, Integer> map = new HashMap<>();
 		//优先级队列，用来存放每个键值对(重写比较方法)
-		PriorityQueue<Entry<Character, Integer>> pr = new PriorityQueue<>(new Comparator<Entry<Character, Integer>>() {
-
-			@Override
-			public int compare(Entry<Character, Integer> o1, Entry<Character, Integer> o2) {
-				return o2.getValue()-o1.getValue();
-			}
-		});
+		PriorityQueue<Entry<Character, Integer>> pr = 
+				new PriorityQueue<>((o1,o2)->o2.getValue()-o1.getValue());
 		//遍历统计
 		for(int i = 0; i < s.length(); i++) {
 			if(!map.containsKey(s.charAt(i))) {
